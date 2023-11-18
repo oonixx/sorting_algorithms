@@ -23,7 +23,7 @@ void swap_ints(int *a, int *b)
  */
 void bubble_sort(int *array, size_t size)
 {
-	size_t index, len = size;
+	size_t i, len = size;
 	bool bubbly = false;
 
 	if (array == NULL || size < 2)
@@ -32,11 +32,11 @@ void bubble_sort(int *array, size_t size)
 	while (bubbly == false)
 	{
 		bubbly = true;
-		for (index = 0; index < len - 1; index++)
+		for (i = 0; i < len - 1; i++)
 		{
-			if (array[index] > array[index + 1])
+			if (array[i] > array[i + 1])
 			{
-				swap_ints(array + index, array + index + 1);
+				swap_ints(array + i, array + i + 1);
 				print_array(array, size);
 				bubbly = false;
 			}
