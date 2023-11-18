@@ -1,4 +1,4 @@
-#include "sortalgo.h"
+#include "sort.h"
 
 /**
  * swap_ints - Swap the two integers in the array.
